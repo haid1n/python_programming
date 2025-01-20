@@ -1,4 +1,5 @@
 course = "AddictivePython"
+
 print(course[1:3])
 
 print(course[:3])
