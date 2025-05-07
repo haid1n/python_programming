@@ -1,6 +1,7 @@
 ## Imported modules ##
 from moviepy import VideoFileClip
 
+import os
 
 ## Function for converting file to mp4 ##
 def convert_to_mp4(input_file, output_file):
@@ -8,10 +9,14 @@ def convert_to_mp4(input_file, output_file):
 
 	video.write_videofile(output_file, codec="libx264")
 
+directory = r"C:\Users\chari plus\OneDrive\Videos\SnapTube"
 
+file = "GOJO SONG _ _Who's Next__ _ Divide Music [Jujutsu Kaisen].webm"
 
-input_file = "beserk_ep1"
+source_file = os.path.join(directory, file)
 
-output_file = "given.mp4"
+input_file = source_file
+
+output_file = "GOJO SONG.mp4"
 
 convert_to_mp4(input_file, output_file)
