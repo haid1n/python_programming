@@ -10,7 +10,7 @@ filepath = r"C:\Users\chari plus\Documents"
 # Create list of files
 file_list = [f for f in listdir(filepath) if isfile(join(filepath, f))]
 
-# Give each file extension
+# Give the extension of the file
 for file in file_list:
 	file_components = file.split(".")
 
